@@ -1,0 +1,292 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f6ff;
+    color: #39334b;
+}
+
+
+header {
+    background: #ffffff;
+    padding: 18px 8%;
+    box-shadow: 0 3px 12px rgba(100, 75, 150, 0.08);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: #7953b5;
+    font-size: 26px;
+}
+
+.navbar h2 span {
+    color: #b49add;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #51456b;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #9670d1;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 85px 20px;
+    background: linear-gradient(135deg, #e9ddff, #f5efff);
+    color: #554078;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #76658e;
+}
+
+.btn {
+    display: inline-block;
+    background: #9670d1;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #7953b5;
+}
+
+
+.container {
+    width: 85%;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(125, 94, 175, 0.10);
+    border: 1px solid #eee6fa;
+}
+
+.card h2 {
+    color: #7953b5;
+    margin-bottom: 15px;
+}
+
+.card > p {
+    margin-bottom: 15px;
+    color: #786d89;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 12px 0 7px;
+    font-weight: bold;
+    color: #554078;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dfd2f3;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+    background: #fcfaff;
+    color: #39334b;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #9670d1;
+    box-shadow: 0 0 5px rgba(150, 112, 209, 0.25);
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+
+button {
+    background: #9670d1;
+    color: white;
+    border: none;
+    padding: 13px;
+    margin-top: 15px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7953b5;
+}
+
+
+#formMessage {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+.features {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.feature {
+    flex: 1;
+    background: #f3edff;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e9ddfa;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    background: #ebe1ff;
+}
+
+.feature h3 {
+    color: #7953b5;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #786d89;
+}
+
+
+.todo-section {
+    grid-column: 1 / -1;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-input button {
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+#taskList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3edff;
+    padding: 13px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    color: #51456b;
+}
+
+.delete-btn {
+    background: #e8a0b4;
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.delete-btn:hover {
+    background: #d77c99;
+}
+
+
+footer {
+    text-align: center;
+    background: #7953b5;
+    color: white;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .todo-input {
+        flex-direction: column;
+    }
+
+    .todo-input button {
+        padding: 12px;
+    }
+}
