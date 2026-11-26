@@ -1,0 +1,188 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #087f6b;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+
+nav {
+    background: #065f50;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b8f2e6;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #087f6b;
+    margin-bottom: 15px;
+}
+
+/* Quiz */
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.option {
+    display: block;
+    background: #e8f5f1;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #b5ddd1;
+}
+
+.option:hover {
+    background: #ccebe1;
+}
+
+#quizResult {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+button {
+    background: #087f6b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #065f50;
+}
+
+
+.carousel {
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+input {
+    padding: 12px;
+    width: 70%;
+    max-width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+#weatherResult {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #065f50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    .carousel img {
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 17px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .carousel img {
+        height: 180px;
+    }
+}
